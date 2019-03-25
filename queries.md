@@ -2,13 +2,23 @@
 
 ## find all customers that live in London. Returns 6 records.
 
+**_select _ from Customers where city = 'London';\***
+
 ## find all customers with postal code 1010. Returns 3 customers.
+
+**_select _ from Customers where postalcode = '1010';\***
 
 ## find the phone number for the supplier with the id 11. Should be (010) 9984510.
 
+**_select phone from Suppliers where supplierid = 11;_**
+
 ## list orders descending by the order date. The order with date 1997-02-12 should be at the top.
 
+**_select _ from Orders order by orderdate desc\***
+
 ## find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name. Returns 11 records.
+
+**_select _ from Suppliers where length(SupplierName) > 20;\***
 
 ## find all customers that include the word "market" in the name. Should return 4 records.
 
